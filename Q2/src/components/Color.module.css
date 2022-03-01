@@ -1,0 +1,19 @@
+.container{
+    width:fit-content;  
+    border-bottom:1px solid lightblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  
+}
+.square{    
+    width:10px;
+    height:10px;
+    display:inline-block;
+    border:1px solid black;
+    margin-right:5px;
+}
+.inline{
+    display:inline-block;
+}

@@ -1,0 +1,19 @@
+.container{
+    width: 40%;
+    margin:5% auto;
+    /* background-color: #8B062A;     */
+    border:1px solid lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.btn{
+    width: 200px;
+    padding: 5px;
+}
+.btn:hover{
+    background-color: rgb(143, 125, 202);
+   
+}
