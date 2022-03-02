@@ -8,19 +8,19 @@ class Counter extends Component {
     this.state = {
       counter: 0,
     };
+  }
+  increaseOne = () => {
+    this.setState((prevState) => ({
+      counter: prevState.counter + 1,
+    }));
+  };
+  decreaseOne = () => {
+    if (this.state.counter >= 1) {
+      this.setState((prevState) => ({
+        counter: prevState.counter - 1,
+      }));
     }
-    increaseOne = () => {
-        this.setState((prevState) => ({
-            counter:prevState.counter+1
-        }))
-    }
-    decreaseOne = () => {
-        if (this.state.counter >= 1) {
-            this.setState((prevState) => ({
-                counter:prevState.counter-1
-            }))
-        }     
-    }
+  };
   render() {
     return (
       <div className={styles.container}>
@@ -29,7 +29,7 @@ class Counter extends Component {
         <hr className={styles.hr} />
         <div className={styles.btn}>
           <Button title="increase" clickHandler={this.increaseOne} />
-          <Button title="decrease" clickHandler={this.decreaseOne}  />
+          <Button title="decrease" clickHandler={this.decreaseOne} />
         </div>
       </div>
     );
